@@ -1,0 +1,20 @@
+﻿@model Player
+@{
+    ViewBag.Title = "Enter game code";
+}
+
+    <div class="jumbotron">
+        <h2>Enter the game</h2>
+        <form asp-action="Index" asp-controller="Player">
+            <div class="form-group">
+                <label asp-for="Game.RoomCode" for="gameCode">Game room code</label>
+                <input asp-for="Game.RoomCode" class="form-control" type="text" id="gameCode" required="required" />
+            </div>
+            <div class="form-group">
+                <label asp-for="PlayerName" for="playerName">Your name</label>
+                <input asp-for="PlayerName" class="form-control" type="text" id="playerName" required="required" />
+            </div>
+
+            <button class="btn btn-primary" type="submit">Join the game</button>
+        </form>
+    </div>

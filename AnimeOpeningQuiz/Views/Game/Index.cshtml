@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Create new game";
+}
+
+<div class="jumbotron">
+    <h2>Game room setup</h2>
+    <form>
+        <div class="form-group">
+            <label for="gameTitle">Game title</label>
+            <input type="text" class="form-control" id="gameTitle" required="required" />
+        </div>
+        <div class="form-group">
+            <label for="gameCreatorName">Game master name</label>
+            <input type="text" class="form-control" id="gameCreatorName" required="required" />
+        </div>
+        <div class="form-group">
+            <label for="questionCount">Number of questions</label>
+            <input type="number" class="form-control" id="questionCount" required="required" />
+        </div>
+        <div class="form-group">
+            <label for="difficultyLevelCount">Number of difficulty levels</label>
+            <input type="number" class="form-control" id="difficultyLevelCount" required="required" />
+        </div>
+        <div class="form-group">
+            <label for="questionCountPerDifficulty">Number of questions per difficulty level (optional)</label>
+            <input type="number" class="form-control" id="questionCountPerDifficulty" />
+        </div>
+        <button type="submit" class="btn btn-primary">Create game</button>
+    </form>
+</div>
